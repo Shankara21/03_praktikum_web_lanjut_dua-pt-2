@@ -8,6 +8,8 @@ class AboutController extends Controller
 {
     public function about()
     {
-        return view('about');
+        return view('about', [
+            'title' => 'About'
+        ]);
     }
 }
