@@ -68,7 +68,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="section-heading">
-          <h2>Financial <em>Services</em></h2>
+          <h2>Business <em>Services</em></h2>
           <span>Aliquam id urna imperdiet libero mollis hendrerit</span>
         </div>
       </div>
