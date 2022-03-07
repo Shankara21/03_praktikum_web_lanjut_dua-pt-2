@@ -52,36 +52,20 @@
           <span>Suspendisse a ante in neque iaculis lacinia</span>
         </div>
       </div>
-      <div class="col-md-4">
+      @foreach ($about as $a)
+
+      <div class="col-md-6">
         <div class="team-item">
           <img src="assets/images/team_01.jpg" alt="">
           <div class="down-content">
-            <h4>William Smith</h4>
-            <span>Co-Founder</span>
-            <p>In sem sem, dapibus non lacus auctor, ornare sollicitudin lacus. Aliquam ipsum urna, semper quis.</p>
+            <h4>{{ $a->nama }}</h4>
+            <span>{{ $a->jabatan }}</span>
+            <p>{{ $a->kampus }}</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="team-item">
-          <img src="assets/images/team_02.jpg" alt="">
-          <div class="down-content">
-            <h4>Mary Houston</h4>
-            <span>Chief Marketing Officer</span>
-            <p>In sem sem, dapibus non lacus auctor, ornare sollicitudin lacus. Aliquam ipsum urna, semper quis.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="team-item">
-          <img src="assets/images/team_03.jpg" alt="">
-          <div class="down-content">
-            <h4>Paul Walker</h4>
-            <span>Financial Analyst</span>
-            <p>In sem sem, dapibus non lacus auctor, ornare sollicitudin lacus. Aliquam ipsum urna, semper quis.</p>
-          </div>
-        </div>
-      </div>
+      @endforeach
+
     </div>
   </div>
 </div>
@@ -145,45 +129,19 @@
       <div class="col-md-12">
         <div class="owl-testimonials owl-carousel">
 
-          <div class="testimonial-item">
-            <div class="inner-content">
-              <h4>George Walker</h4>
-              <span>Chief Financial Analyst</span>
-              <p>"Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem
-                sit amet quam. Pellentesque in sagittis lacus."</p>
-            </div>
-            <img src="http://placehold.it/60x60" alt="">
-          </div>
+          @foreach ($about as $a)
 
           <div class="testimonial-item">
             <div class="inner-content">
-              <h4>John Smith</h4>
-              <span>Market Specialist</span>
-              <p>"In eget leo ante. Sed nibh leo, laoreet accumsan euismod quis, scelerisque a nunc. Mauris accumsan,
-                arcu id ornare malesuada, est nulla luctus nisi."</p>
+              <h4>{{ $a->nama }}</h4>
+              <span>{{ $a->jabatan }}</span>
+              <p>{{ $a->kampus }}</p>
             </div>
             <img src="http://placehold.it/60x60" alt="">
           </div>
+          @endforeach
 
-          <div class="testimonial-item">
-            <div class="inner-content">
-              <h4>David Wood</h4>
-              <span>Chief Accountant</span>
-              <p>"Ut ultricies maximus turpis, in sollicitudin ligula posuere vel. Donec finibus maximus neque, vitae
-                egestas quam imperdiet nec. Proin nec mauris eu tortor consectetur tristique."</p>
-            </div>
-            <img src="http://placehold.it/60x60" alt="">
-          </div>
 
-          <div class="testimonial-item">
-            <div class="inner-content">
-              <h4>Andrew Boom</h4>
-              <span>Marketing Head</span>
-              <p>"Curabitur sollicitudin, tortor at suscipit volutpat, nisi arcu aliquet dui, vitae semper sem turpis
-                quis libero. Quisque vulputate lacinia nisl ac lobortis."</p>
-            </div>
-            <img src="http://placehold.it/60x60" alt="">
-          </div>
 
         </div>
       </div>
